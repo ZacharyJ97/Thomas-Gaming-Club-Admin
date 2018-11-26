@@ -1,0 +1,41 @@
+﻿.submit-display {
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 5px;
+    border: double;
+    border-color: gold;
+    border-collapse: collapse;
+    border-radius: 5px;
+    background-color: firebrick;
+    width: 98%;
+    height: 100%;
+}
+
+#submit-table {
+    margin-top: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+#submit-table td {
+    border: double;
+    border-radius: 5px;
+    border-color: gold;
+    color: gold;
+    padding: 10px;
+    text-align: left;
+    max-width: 150px;
+    word-wrap: break-word;
+}
+
+#submit-table th {
+    height: 35px;
+    max-width: 100px;
+    border: double;
+    border-color: gold;
+    background-color: #505050;
+    color: gold;
+    border-collapse: collapse;
+    width: 50px;
+    max-width: 50px;
+}

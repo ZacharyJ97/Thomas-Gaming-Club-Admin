@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "AllContacts";
+}
+
+<h2>All Contact Submissions</h2>
+
+@section Styles {
+    <link href="@Url.Content("~/Content/ContactSummary.css")" rel="stylesheet" type="text/css" />
+}
+
+<!-- SUBMIT TABLE -->
+<div class="submit-display">
+    <table id="submit-table">
+        <tr>
+            <th>Contact</th>
+            <th>Connection</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Message</th>
+        </tr>
+        
+            @foreach (var data in ViewBag.Contacts)
+            {
+                <tr>
+                    <td> @data.PreferredContact </td>
+                    <td> @data.PreferredTitle</td>
+                    <td> @data.FirstName @data.LastName</td>
+                    <td> @data.Email</td>
+                    <td> @data.Phone</td>
+                    <td> @data.Message</td>
+                </tr>
+            }
+        
+
+    </table>
+</div>
+<!-- END SUBMIT TABLE -->

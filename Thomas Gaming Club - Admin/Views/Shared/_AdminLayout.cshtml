@@ -1,0 +1,42 @@
+﻿@section Styles {
+    <link href="@Url.Content("~/Content/generalContent.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/navbar.css")" rel="stylesheet" type="text/css" />
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Thomas Gaming Club</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Noto+Serif+KR" rel="stylesheet">
+    @Styles.Render("~/Content/navbar.css")
+    @Styles.Render("~/Content/generalContent.css")
+    @RenderSection("Styles", false)
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar">
+
+        <h1>@Html.ActionLink("Thomas College Gaming Club", "Index")</h1>
+
+        <ul>
+            <li><a href="visit.html">Tournaments</a></li>
+            <li><a href="visit.html">Hangouts</a></li>
+            <li><a href="visit.html">Extra Life</a></li>
+            <li><a href="visit.html">Resources</a></li>
+            <li>@Html.ActionLink("About Us", "About") </li>
+            <li>@Html.ActionLink("Contact Us", "Contact") </li>
+            <li>@Html.ActionLink("Officer's Zone", "AllContacts") </li>
+        </ul>
+        @Html.Partial("_LoginPartial")
+    </div>
+
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+
+</html>

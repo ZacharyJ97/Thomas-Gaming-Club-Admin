@@ -1,0 +1,145 @@
+/*CONTACT PAGE ITEMS*/
+
+/*This bar is just a div colored to be red, underneath the 2nd heading of the Contact Us page*/
+.accent-bar{
+	background-color: firebrick;
+	margin: 0;
+	width: 100%;
+	height: 10px;
+	border-bottom: double;
+	border-top: double;
+	border-color: gold;
+}
+
+.column
+{
+	display: table;
+	margin: 0px;
+    width: 49%;
+    max-width: 49%;
+
+}
+.contact-page-left
+{
+    display: table-cell;
+}
+
+.contact-page-right {
+    display: table-cell;
+}
+
+/*Contact-input refers to the fieldset of the form on the Contact Us page, so its the whole group of form questions*/
+#contact-input {
+	margin-top: 0px;
+	padding: 0px;
+	padding-top: 20px;
+	border: none;
+}
+
+/*All reg input class divs on the form (as opposed to a text area)*/
+.reg-input{
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 70%;
+	color: gold;
+	background-color: firebrick;
+	border: double;
+	border-radius: 10px;
+}
+/*Response is the class that is the input boxes themselves*/
+.response{
+    color: black;
+    width: 100%;
+}
+
+/*The div containing the textarea input box and the label on the contact form*/
+.textarea-input {
+	padding: 10px;
+	margin-bottom: 20px;
+	width: 94%;
+	height: 94%;
+	color: gold;
+	background-color: firebrick;
+	border: double;
+	border-radius: 10px;
+}
+
+/*All textarea boxes under fieldset contact-input*/
+#contact-input textarea {
+    margin-top: 5px;
+    border: double;
+    border-color: goldenrod;
+    border-radius: 10px;
+    outline: 0;
+    width:98%;
+    color: black;
+    height: 290px;
+}
+
+/*All labels under fieldset contact-input*/
+#contact-input label {
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+/*All select items under fieldset contact-input*/
+#contact-input select {
+	font-size: 11pt;
+}
+
+/*The submit button on the Contact Us page*/
+#contact-submit-button {
+	margin: 0px;
+	margin-left: 50px;
+    margin-bottom: 10px;
+	font-weight: bold;
+	width: 160px;
+	height: 45px;
+	color: gold;
+	background-color: firebrick;
+	border: double;
+	border-radius: 10px;
+	cursor: pointer;
+	outline: 0;
+}
+#contact-submit-button:hover{
+	color: palegoldenrod;
+	background-color: red;
+}
+
+#contact-submit-button:active{
+	color: darkorange;
+	background-color: maroon;
+}
+
+.other-info
+{
+	text-align:left;
+	width: 550px;
+	margin-top: 10px;
+	padding: 0px;
+}
+.other-info h3
+{
+	border-bottom: 3px double firebrick;
+	padding: 8px;
+	margin: 0px;
+	text-align:center;
+}
+.other-info h4
+{
+	margin: 5px;
+	margin-left: 0px;
+}
+.other-info p
+{
+	margin:0px;
+}
+.other-info img
+{
+	width: 500px;
+	max-width: 500px;
+	margin-top: 20px;
+	border: 8px solid #ddd;
+    border-radius: 4px;
+}
