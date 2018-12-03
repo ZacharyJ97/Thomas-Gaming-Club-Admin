@@ -3,32 +3,18 @@
 
 .main-pictures{
     display: table;
+
 }
 
 /*This is the column control scheme for the top pictures of the main page */
-.main-column {
-	display: table-cell;
-	width: 50%;
+.column main-left-column {
+    display: table-cell;
+    width: 50%;
 }
 
-/*Left column for left most picture on main page*/
-.main-left-column{
-	/*.. brings up a folder*/
-	background-image: url('../Images/commons-fireplace.jpg');
-	/*Background was cropped to fill extra margin space*/
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 300px;
-}
-
-/*Right column for right most picture on main page */
-.main-right-column {
-    /*.. brings up a folder*/
-    background-image: url('../Images/commons-senate.jpg');
-    /*Background was cropped to fill extra margin space*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
+.column main-right-column {
+    display: table-cell;
+    width: 50%;
 }
 
 /*This is text on the main page pictures */

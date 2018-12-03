@@ -1,0 +1,55 @@
+﻿/*This bar is just a div colored to be red, underneath the heading of the About Us page*/
+.accent-bar {
+    background-color: firebrick;
+    margin: 0;
+    width: 100%;
+    height: 10px;
+    border-bottom: double;
+    border-top: double;
+    border-color: gold;
+}
+
+.officers {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 98%;
+}
+
+.off {
+    display: table;
+    width: 100%;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+
+.off-info {
+    display: table-cell;
+    width: 68%;
+    max-width: 68%;
+    float: right;
+    margin-top: 4%;
+    border-left: .35vw outset firebrick;
+    border-bottom: .35vw outset firebrick;
+    border-radius: .3vw;
+    word-wrap: break-word;
+}
+
+.off-info p {
+    text-align: justify;
+    margin-left: 20px;
+    font-size: 1.6vw;
+}
+
+.off-pic {
+    display: table-cell;
+    width: 29%;
+    float: left;
+}
+
+.off-pic img {
+    width: 100%;
+    height: 100%;
+    border: .6vw solid #ddd;
+    border-radius: .6vw;
+}

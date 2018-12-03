@@ -21,15 +21,15 @@
         <h1>@Html.ActionLink("Thomas College Gaming Club", "Index")</h1>
 
         <ul>
-            <li><a href="visit.html">Tournaments</a></li>
-            <li><a href="visit.html">Hangouts</a></li>
+            <li><a href="visit.html">Events</a></li>
             <li><a href="visit.html">Extra Life</a></li>
             <li><a href="visit.html">Resources</a></li>
             <li>@Html.ActionLink("About Us", "About") </li>
             <li>@Html.ActionLink("Contact Us", "Contact") </li>
             <li>@Html.ActionLink("Officer's Zone", "AllContacts") </li>
+            @Html.Partial("_LoginPartial")
         </ul>
-        @Html.Partial("_LoginPartial")
+        
     </div>
 
     @RenderBody()

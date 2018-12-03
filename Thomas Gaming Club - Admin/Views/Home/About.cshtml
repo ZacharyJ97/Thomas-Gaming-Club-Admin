@@ -2,13 +2,63 @@
 
 @{
     ViewBag.Title = "About";
-    //Layout = "_Layout";
+}
+
+@section Styles {
+    <link href="@Url.Content("~/Content/AboutUs.css")" rel="stylesheet" type="text/css" />
 }
 
 
 <div class="main-content">
 
     <h2>Meet the Officers of Thomas Gaming Club!</h2>
-            
-</div>
+    <div class="accent-bar"></div>
 
+    <div class="officers">
+
+        <div class="off">
+            <div class="off-pic">
+                <img id="pat" src="~/Images/patrick-bro.jpg" />
+            </div>
+
+            <div class="off-info">
+                <p>
+                    Patrick Brocato is Thomas Gaming Club's Officer of Communications. He plans and heads all Gaming Club Meetings and Trivia Nights, and manages budget allocation requests for the club.
+                    Additionally, Patrick helps with the general idea brainstorming, planning, and execution of Gaming Club events. He is an integral part to the club's success.
+                    As for academics, Patrick pursues a Bachelor of Science in Computer Science with minors in Cyber Security and IT Management, and will graduate in May of 2019.
+                    This is Patrick's second year as an officer of Thomas Gaming Club.
+                </p>
+            </div>
+        </div>
+
+        <div class="off">
+            <div class="off-pic">
+                <img id="tay" src="~/Images/taybae_tft.jpg" />
+            </div>
+
+            <div class="off-info">
+                <p>
+                    Taylan Thomas is Thomas Gaming Club's Officer of Events. He oversees the technicalities of certain events like tournament brackets, rules, and hardware use. Additionally, he cares for the
+                    paperwork that allows the club to hold events, gain advertising, and report on turnout. Like all officers, he is a crucial component to the success of Thomas Gaming Club and regularly
+                    contributes ideas and strategies for events and their execution. At Thomas, Taylan is a dual Cyber Security and Computer Science major, due to graduate in May of 2019. This is Taylan's second year
+                    as an officer of Thomas Gaming Club.
+                </p>
+            </div>
+        </div>
+
+        <div class="off">
+            <div class="off-pic">
+                <img id="zach" src="~/Images/zach_fitz.jpg" />
+            </div>
+
+            <div class="off-info">
+                <p>
+                    Zachary Fitzpatrick is Thomas Gaming Club's Officer of Operations. He heads the current team of officers that serve the club. Zach's duties ensure that the club complies with the standards set forth by Thomas and is the club's first point of contact. He keeps track
+                    of current members, club funding items, tournament preparations, internal communications, and club establishment each semester. Additionally, he also lends his hand in inventive ideas for members to be consistently engaged in the club, retain attendance, and improve the club's popularity.'
+                    Zach studies Computer Science at Thomas and will graduate in May of 2019; this being his third year as an officer of Thomas Gaming Club.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
