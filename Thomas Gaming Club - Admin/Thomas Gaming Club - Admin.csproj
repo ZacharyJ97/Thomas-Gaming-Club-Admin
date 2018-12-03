@@ -225,8 +225,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Images\commons-fireplace.jpg" />
-    <Content Include="Images\commons-senate.jpg" />
+    <Content Include="Images\com-fire.png" />
+    <Content Include="Images\com-senate.png" />
     <Content Include="Images\Gaming-Desktop.png" />
     <Content Include="Images\Overcooked.jpg" />
     <Content Include="Images\patrick-bro.jpg" />
