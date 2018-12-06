@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Resources";
+}
+
+@section Styles {
+    <link href="@Url.Content("~/Content/Resources.css")" rel="stylesheet" type="text/css" />
+}
+
+    <div class="main-content">
+
+        <h2>Our Setups!</h2>
+        <div class="accent-bar"></div>
+
+        <div class="res-info">
+            <p>
+                Below is a selection of our current hardware for gaming resources. As a student of Thomas College, these systems can be checked out from
+                the Athletic Center or used in the Esports Studio. You are held responsible for what happens to the systems, accessories, and games, so please be considerate.
+                The club often utilizes these resources for our various events and receives senate funding to acquire the systems and their components.
+                Click on any of the images below to pull up more information on the games we have available for each system.
+            </p>
+        </div>
+
+        <div class="res-accent"></div>
+        <div class="res-accent" id="res-accent2"></div>
+
+        <div class="img-container">
+            <div class="img-banner">
+                <a href="@Url.Action("PCGames", "Home")">
+                    <img class="start-img" id="desktop" src="@Url.Content("~/Images/Gaming-Desktop.png")" />
+                </a>
+                <a href="@Url.Action("WiiGames", "Home")">
+                    <img id="wii" src="@Url.Content("~/Images/wii.png")" />
+                </a>
+                <a href="@Url.Action("PS4Games", "Home")">
+                    <img id="pspro" src="@Url.Content("~/Images/PS4-Pro.png")" />
+                </a>
+                <a href="@Url.Action("PS4Games", "Home")">
+                    <img id="psvr" src="@Url.Content("~/Images/PS-VR.png")" />
+                </a>
+                <a href="@Url.Action("WiiUGames", "Home")">
+                    <img id="wiiu" src="@Url.Content("~/Images/wii-u.png")" />
+                </a>
+                <a href="@Url.Action("XboxGames", "Home")">
+                    <img id="xbox" src="@Url.Content("~/Images/xbox-360.png")" />
+                </a>
+                <a href="@Url.Action("PCGames", "Home")">
+                    <img id="desktop" src="@Url.Content("~/Images/Gaming-Desktop.png")" />
+                </a>
+                <a href="@Url.Action("WiiGames", "Home")">
+                    <img id="wii" src="@Url.Content("~/Images/wii.png")" />
+                </a>
+                <a href="@Url.Action("PS4Games", "Home")">
+                    <img id="pspro" src="@Url.Content("~/Images/PS4-Pro.png")" />
+                </a>
+                <a href="@Url.Action("PS4Games", "Home")">
+                    <img id="psvr" src="@Url.Content("~/Images/PS-VR.png")" />
+                </a>
+                <a href="@Url.Action("WiiUGames", "Home")">
+                    <img id="wiiu" src="@Url.Content("~/Images/wii-u.png")" />
+                </a>
+                <a href="@Url.Action("XboxGames", "Home")">
+                    <img id="xbox" src="@Url.Content("~/Images/xbox-360.png")" />
+                </a>
+            </div>
+        </div>
+
+        <div class="res-accent" id="res-accent2"></div>
+        <div class="res-accent"></div>
+    </div>

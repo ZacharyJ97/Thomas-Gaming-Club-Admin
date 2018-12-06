@@ -218,9 +218,11 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\contactPage.css" />
     <Content Include="Content\ContactSummary.css" />
+    <Content Include="Content\Games.css" />
     <Content Include="Content\generalContent.css" />
     <Content Include="Content\homePage.css" />
     <Content Include="Content\navbar.css" />
+    <Content Include="Content\Resources.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -230,13 +232,13 @@
     <Content Include="Images\Gaming-Desktop.png" />
     <Content Include="Images\Overcooked.jpg" />
     <Content Include="Images\patrick-bro.jpg" />
-    <Content Include="Images\PS-VR.jpg" />
-    <Content Include="Images\PS4-Pro.jpg" />
+    <Content Include="Images\PS-VR.png" />
+    <Content Include="Images\PS4-Pro.png" />
     <Content Include="Images\rocket-league.jpg" />
     <Content Include="Images\thomas-sign.jpg" />
-    <Content Include="Images\wii-u.jpg" />
-    <Content Include="Images\wii.jpg" />
-    <Content Include="Images\xbox-360.jpg" />
+    <Content Include="Images\wii-u.png" />
+    <Content Include="Images\wii.png" />
+    <Content Include="Images\xbox-360.png" />
     <Content Include="Images\zach_fitz.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -297,6 +299,12 @@
     <Content Include="Views\ContactsAdmin\Details.cshtml" />
     <Content Include="Views\ContactsAdmin\Edit.cshtml" />
     <Content Include="Views\ContactsAdmin\Index.cshtml" />
+    <Content Include="Views\Home\Resources.cshtml" />
+    <Content Include="Views\Home\PS4Games.cshtml" />
+    <Content Include="Views\Home\WiiUGames.cshtml" />
+    <Content Include="Views\Home\WiiGames.cshtml" />
+    <Content Include="Views\Home\XboxGames.cshtml" />
+    <Content Include="Views\Home\PCGames.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

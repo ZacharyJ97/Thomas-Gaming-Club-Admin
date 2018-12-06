@@ -28,7 +28,7 @@
 
 /*For any navbars with ul list elements with anchors in the visited state*/
 .navbar ul li a:visited{
-	/*I dont link it changing colors for visited areas*/
+	/*I dont like it changing colors for visited areas*/
 	color: goldenrod;
 	/* No underlines*/
 	text-decoration: none;
@@ -68,6 +68,7 @@
 /*The footer of each page */
 .footer-bar {
     background-color: #303030;
+    width: 99.22%;
     font-style: italic;
     color: whitesmoke;
     text-align: center;
@@ -77,8 +78,31 @@
     margin-bottom: 0px;
 }
 
+.footer-bar ul {
+    background-color: #505050;
+    padding: 3px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.footer-bar ul li{
+    display: inline;
+    margin-left: 50px;
+}
+
 /*The footer link to Thomas website on each page */
 .footer-bar a {
     color: goldenrod;
     text-decoration: none;
+}
+
+/*Put here for any page with an accent bar, no issues if there aren't. Accent bar is a specific named div element for the site*/
+.accent-bar {
+    background-color: firebrick;
+    margin: 0;
+    width: 100%;
+    height: 10px;
+    border-bottom: double;
+    border-top: double;
+    border-color: gold;
 }

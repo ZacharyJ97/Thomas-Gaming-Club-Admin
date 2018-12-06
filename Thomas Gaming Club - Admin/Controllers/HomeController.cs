@@ -23,6 +23,40 @@ namespace Thomas_Gaming_Club.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public ViewResult Resources()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ViewResult PS4Games()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ViewResult WiiUGames()
+        {
+            return View();
+        }
+        [HttpGet]
+        public ViewResult XboxGames()
+        {
+            return View();
+        }
+        [HttpGet]
+        public ViewResult PCGames()
+        {
+            return View();
+        }
+        [HttpGet]
+        public ViewResult WiiGames()
+        {
+            return View();
+        }
+
         [HttpGet]
         public ViewResult Contact()
         {

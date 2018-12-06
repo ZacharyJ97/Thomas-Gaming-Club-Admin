@@ -1,14 +1,4 @@
 ﻿/*This bar is just a div colored to be red, underneath the heading of the About Us page*/
-.accent-bar {
-    background-color: firebrick;
-    margin: 0;
-    width: 100%;
-    height: 10px;
-    border-bottom: double;
-    border-top: double;
-    border-color: gold;
-}
-
 .officers {
     margin-top: 20px;
     margin-bottom: 15px;

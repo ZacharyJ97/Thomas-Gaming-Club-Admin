@@ -10,8 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Thomas Gaming Club</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP|Noto+Serif+KR" rel="stylesheet">
-    @Styles.Render("~/Content/navbar.css")
     @Styles.Render("~/Content/generalContent.css")
+    @Styles.Render("~/Content/navbar.css")
     @RenderSection("Styles", false)
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -23,10 +23,9 @@
         <ul>
             <li><a href="visit.html">Events</a></li>
             <li><a href="visit.html">Extra Life</a></li>
-            <li><a href="visit.html">Resources</a></li>
+            <li>@Html.ActionLink("Resources", "Resources")</li>
             <li>@Html.ActionLink("About Us", "About") </li>
             <li>@Html.ActionLink("Contact Us", "Contact") </li>
-            <li>@Html.ActionLink("Officer's Zone", "AllContacts") </li>
             @Html.Partial("_LoginPartial")
         </ul>
 
@@ -35,6 +34,15 @@
 
     <div class="footer-bar">
         <footer>
+            <ul>
+                <li>@Html.ActionLink("Home", "Index")</li>
+                <li><a href="visit.html">Events</a></li>
+                <li><a href="visit.html">Extra Life</a></li>
+                <li>@Html.ActionLink("Resources", "Resources")</a></li>
+                <li>@Html.ActionLink("About Us", "About") </li>
+                <li>@Html.ActionLink("Contact Us", "Contact") </li>
+                <li>@Html.ActionLink("Officer's Zone", "AllContacts") </li>
+            </ul>
             <p class="footer-text">Check out our community at <a href="http://thomas.edu">Thomas College!</a></p>
         </footer>
     </div>
