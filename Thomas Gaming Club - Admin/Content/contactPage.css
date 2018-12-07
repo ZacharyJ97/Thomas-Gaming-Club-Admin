@@ -63,12 +63,11 @@
 /*All labels under fieldset contact-input*/
 #contact-input label {
 	font-weight: bold;
-	font-size: 12pt;
 }
 
 /*All select items under fieldset contact-input*/
 #contact-input select {
-	font-size: 11pt;
+	font-size: 1.5vw;
 }
 
 /*The submit button on the Contact Us page*/
@@ -130,4 +129,10 @@
 .response {
     color: gold;
     width: 100%;
+}
+
+/*These are specifically the boxes typed in or used to select answers on the contact page*/
+.input-boxes{
+    width: 100%;
+    font-size: 1.5vw;
 }

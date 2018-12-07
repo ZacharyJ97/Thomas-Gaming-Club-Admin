@@ -1,6 +1,7 @@
 ﻿body {
     font-family: 'Noto Serif JP', Helvetica, Arial, sans-serif;
     margin: 0;
+    font-size: 1.5vw;
 }
 
 /*The main content of each page*/
@@ -11,15 +12,15 @@
 
 h2 {
     padding-left: 20px;
-    font-size: 24pt;
+    font-size: 2.5vw;
     margin: 10px;
 }
 
 h3 {
-    font-size: 20pt;
+    font-size: 1.8vw;
     margin: 10px;
 }
 
 h4 {
-    font-size: 16pt;
+    font-size: 1.7vw;
 }

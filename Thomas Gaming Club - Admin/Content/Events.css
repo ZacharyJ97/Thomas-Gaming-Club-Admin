@@ -8,7 +8,6 @@
 /*Heading paragraph*/
 .event-overview p {
     font-size: 1.6vw;
-        
 }
 
 /*The h2 of the event page*/
@@ -18,7 +17,7 @@
 /*The h3s of each type of event*/
 #event-headings {
     font-size: 1.8vw;
-    margin: 0px 10px;
+    margin: 5px 10px;
 }
 
 /*CSS for moving images*/
@@ -121,7 +120,7 @@
     display: table-cell;
     width: 60%;
     max-width: 60%;
-    margin-top: 2%;
+    margin-top: 1.5%;
     float: right;
     border-left: .35vw inset goldenrod;
     border-bottom: .35vw inset goldenrod;
@@ -129,12 +128,19 @@
     word-wrap: break-word;
 }
 
+#tourn-info{
+    margin-top: .5%;
+}
+
 .event-info p {
     text-align: justify;
     margin-left: 10px;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 5px;
     font-size: 1.3vw;
+}
+#tourn-info{
+
 }
 
 /*Container for event pictures*/

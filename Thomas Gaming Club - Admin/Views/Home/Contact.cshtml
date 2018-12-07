@@ -27,7 +27,7 @@
                             new SelectListItem() {Text = "The Events Coordinator"},
                             new SelectListItem() {Text = "The Officer of Communication"},
                             new SelectListItem() {Text = "No Preference"}
-                        }, "Select a Preferred Person of Contact")
+                        }, "Select a Preferred Person of Contact", new { @class = "input-boxes" })
                     </p>
                 </div>
 
@@ -41,24 +41,24 @@
                             new SelectListItem() {Text = "Prospective Student"},
                             new SelectListItem() {Text = "Staff Member"},
                             new SelectListItem() {Text = "Other"}
-                        }, "Select an Option")
+                        }, "Select an Option", new { @class = "input-boxes" })
                     </p>
                 </div>
 
                 <div class="reg-input">
-                    <p name="first-name" id="first-name" class="response">First Name: @Html.TextBoxFor(x => x.FirstName)</p>
+                    <p name="first-name" id="first-name" class="response">First Name: @Html.TextBoxFor(x => x.FirstName, new { @class = "input-boxes" })</p>
                 </div>
 
                 <div class="reg-input">
-                    <p name="last-name" id="last-name" class="response">Last Name: @Html.TextBoxFor(x => x.LastName)</p>
+                    <p name="last-name" id="last-name" class="response">Last Name: @Html.TextBoxFor(x => x.LastName, new { @class = "input-boxes" })</p>
                 </div>
 
                 <div class="reg-input">
-                    <p name="email-input" id="email-input" class="response">Email: @Html.TextBoxFor(x => x.Email)</p>
+                    <p name="email-input" id="email-input" class="response">Email: @Html.TextBoxFor(x => x.Email, new { @class = "input-boxes" })</p>
                 </div>
 
                 <div class="reg-input">
-                    <p name="phone-number" id="phone-number" class="response">Phone: @Html.TextBoxFor(x => x.Phone)</p>
+                    <p name="phone-number" id="phone-number" class="response">Phone: @Html.TextBoxFor(x => x.Phone, new { @class = "input-boxes" })</p>
                 </div>
 
                 <div class="textarea-input">
