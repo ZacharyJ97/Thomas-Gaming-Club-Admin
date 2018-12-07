@@ -69,7 +69,7 @@
     animation: img-move 30s linear infinite;
 }
 
-@keyframes "img-move" {
+@keyframes img-move {
     0% {
     margin-left: 0px;
 }
@@ -89,7 +89,7 @@
     }
 }
 
-@-webkit-keyframes "img-move" {
+@-webkit-keyframes img-move {
     
     0% {
         margin-left: 0px;
@@ -100,7 +100,7 @@
     }
 }
 
-@-o-keyframes "img-move" {
+@-o-keyframes img-move {
     0% {
     margin-left: 0px;
 }

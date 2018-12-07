@@ -19,6 +19,12 @@ namespace Thomas_Gaming_Club.Controllers
         }
 
         [HttpGet]
+        public ViewResult Events()
+        {
+            return View();
+        }
+
+        [HttpGet]
         public ViewResult About()
         {
             return View();

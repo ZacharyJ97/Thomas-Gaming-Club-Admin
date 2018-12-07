@@ -6,7 +6,6 @@
 	background-color: #505050;
 	text-align: center;
 	margin: 0;
-	padding: .05em;
 	border-bottom: solid;
 	border-bottom-color: goldenrod;
 }
@@ -16,7 +15,8 @@
 	/*changes list items from block elements to inline elements*/
 	display: inline;
 	font-size: 16pt;
-	margin-right: 30px;
+	margin-left: 20px;
+    margin-right: 20px;
 }
 
 /*For any navbars with ul list elements with anchors in the link state*/
