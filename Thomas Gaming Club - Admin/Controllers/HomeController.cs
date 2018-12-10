@@ -60,7 +60,22 @@ namespace Thomas_Gaming_Club.Controllers
         [HttpGet]
         public ViewResult WiiGames()
         {
-            return View();
+            ViewBag.Games = GetGames().Where(x => x.platform.Contains("Wii"));
+            return View(ViewBag.Games);
+        }
+        private IQueryable<Game> GetGames()
+        {
+            var games = from stack in db.VideoGames
+                         select new Game
+                         {
+                             title = stack.title,
+                             year = stack.year,
+                             publisher = stack.publisher,
+                             developer = stack.developer,
+                             platform = stack.platform
+                         };
+
+            return games;
         }
 
         [HttpGet]
@@ -97,7 +112,7 @@ namespace Thomas_Gaming_Club.Controllers
                  // there is a validation error
                  return View(inquiry);
              }
-         }
+        }
 
         //Ignore all commented code from here down, is extra methods for other trials previously conducted
         /*private IQueryable<Contact> GetContacts()
