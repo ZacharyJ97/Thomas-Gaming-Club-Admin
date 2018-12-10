@@ -5,5 +5,31 @@
     <link href="@Url.Content("~/Content/Games.css")" rel="stylesheet" type="text/css" />
 }
 
+<div class="main-content">
     <h2>All of Our Wii Games</h2>
-<div class="accent-bar"></div>
+    <div class="accent-bar"></div>
+    @{
+        foreach (var game in ViewBag.Videogames)
+        {
+            string gameImage = game.title + ".jpg";
+
+            <div class="game-container">
+                <div class="game-img">
+                    <img src="~/Images-Games/@gameImage" />
+                </div>
+
+                <div class="game-info">
+                    <h3>@game.title</h3>
+                    <ul>
+                        <li>Year Released: @game.year</li>
+                        <li>Publisher: @game.publisher</li>
+                        <li>Developer: @game.developer</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="game-accent-bar"></div>
+
+        }
+    }
+
+</div>

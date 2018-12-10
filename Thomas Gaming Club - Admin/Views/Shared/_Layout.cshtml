@@ -18,14 +18,14 @@
 <body>
     <div class="navbar">
 
-        <h1>@Html.ActionLink("Thomas College Gaming Club", "Index")</h1>
+        <h1>@Html.ActionLink("Thomas College Gaming Club", "Index", "Home")</h1>
 
         <ul>
-            <li>@Html.ActionLink("Events", "Events")</li>
-            <li>@Html.ActionLink("Extra Life", "ExtraLife")</li>
-            <li>@Html.ActionLink("Resources", "Resources")</li>
-            <li>@Html.ActionLink("About Us", "About") </li>
-            <li>@Html.ActionLink("Contact Us", "Contact") </li>
+            <li>@Html.ActionLink("Events", "Events", "Home")</li>
+            <li>@Html.ActionLink("Extra Life", "ExtraLife", "Home")</li>
+            <li>@Html.ActionLink("Resources", "Resources", "Home")</li>
+            <li>@Html.ActionLink("About Us", "About", "Home") </li>
+            <li>@Html.ActionLink("Contact Us", "Contact", "Home") </li>
             @Html.Partial("_LoginPartial")
         </ul>
 
@@ -35,13 +35,13 @@
     <div class="footer-bar">
         <footer>
             <ul>
-                <li>@Html.ActionLink("Home", "Index")</li>
-                <li><a href="visit.html">Events</a></li>
-                <li><a href="visit.html">Extra Life</a></li>
-                <li>@Html.ActionLink("Resources", "Resources")</li>
-                <li>@Html.ActionLink("About Us", "About") </li>
-                <li>@Html.ActionLink("Contact Us", "Contact") </li>
-                <li>@Html.ActionLink("Officer's Zone", "AllContacts") </li>
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Events", "Events", "Home")</li>
+                <li>@Html.ActionLink("Extra Life", "ExtraLife", "Home")</li>
+                <li>@Html.ActionLink("Resources", "Resources", "Home")</li>
+                <li>@Html.ActionLink("About Us", "About", "Home") </li>
+                <li>@Html.ActionLink("Contact Us", "Contact", "Home") </li>
+                <li>@Html.ActionLink("Officer's Zone", "AllContacts", "Home") </li>
             </ul>
             <p class="footer-text">Check out our community at <a href="http://thomas.edu">Thomas College!</a></p>
         </footer>

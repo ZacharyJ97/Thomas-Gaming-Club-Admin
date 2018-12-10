@@ -25,6 +25,12 @@ namespace Thomas_Gaming_Club.Controllers
         }
 
         [HttpGet]
+        public ViewResult ExtraLife()
+        {
+            return View();
+        }
+
+        [HttpGet]
         public ViewResult About()
         {
             return View();
@@ -37,43 +43,42 @@ namespace Thomas_Gaming_Club.Controllers
         }
 
         [HttpGet]
-        public ViewResult PS4Games()
+        public ActionResult PS4Games()
         {
-            ViewBag.Games = GetGames().Where(x => x.platform.Contains("PS4") || x.platform.Contains("PSVR")).ToList() ;
-            return View(ViewBag.Games);
+            ViewBag.VideoGames = db.VideoGames.Where(x => x.platform.Contains("PS4") || x.platform.Contains("PSVR")).ToList();
+            return View();
         }
 
         [HttpGet]
-        public ViewResult WiiUGames()
+        public ActionResult WiiUGames()
         {
-            ViewBag.Games = GetGames().Where(x => x.platform.Contains("WiiU")).ToList();
-            return View(ViewBag.Games);
-        }
-        [HttpGet]
-        public ViewResult XboxGames()
-        {
-            var games = GetGames();
-            List<Game> wiigames;
-            wiigames = games.Where(x => x.platform.Contains("Xbox")).ToList();
-            return View(wiigames.OrderBy(x => x.title).ToList());
+            ViewBag.VideoGames = db.VideoGames.Where(x => x.platform.Contains("WiiU")).ToList();
+            return View();
         }
 
         [HttpGet]
-        public ViewResult PCGames()
+        public ActionResult XboxGames()
         {
-            ViewBag.Games = GetGames().Where(x => x.platform.Contains("PC")).ToList();
-            return View(ViewBag.Games);
+            ViewBag.VideoGames = db.VideoGames.Where(x => x.platform.Contains("Xbox")).ToList();
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult PCGames()
+        {
+            ViewBag.VideoGames = db.VideoGames.Where(x => x.platform.Contains("PC")).ToList();
+            return View();
         }
         [HttpGet]
-        public ViewResult WiiGames()
+        public ActionResult WiiGames()
         {
-            ViewBag.Games = GetGames().Where(x => x.platform.Contains("Wii")).ToList();
-            return View(ViewBag.Games);
+            ViewBag.VideoGames = db.VideoGames.Where(x => x.platform.Equals("Wii")).ToList();
+            return View();
         }
-        private IQueryable<Game> GetGames()
+        private IQueryable<VideoGame> GetGames()
         {
             var games = from stack in db.VideoGames
-                         select new Game
+                         select new VideoGame
                          {
                              gameId = stack.gameId,
                              title = stack.title,
@@ -88,12 +93,6 @@ namespace Thomas_Gaming_Club.Controllers
 
         [HttpGet]
         public ViewResult Contact()
-        {
-            return View();
-        }
-
-        [HttpGet]
-        public ViewResult ExtraLife()
         {
             return View();
         }

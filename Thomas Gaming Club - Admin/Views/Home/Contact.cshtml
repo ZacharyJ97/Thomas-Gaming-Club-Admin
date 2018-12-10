@@ -7,91 +7,92 @@
     <link href="@Url.Content("~/Content/contactPage.css")" rel="stylesheet" type="text/css" />
     }
 
-    <div class="main-content">
+<div class="main-content">
 
-        <h2>Contact an Officer of Thomas College Gaming Club</h2>
-        <div class="accent-bar"></div>
+    <h2>Contact an Officer of Thomas College Gaming Club</h2>
+    <div class="accent-bar"></div>
 
-        <div class="column contact-page-left">
-            <!-- Contact Form -->
-            @using (Html.BeginForm())
-            {
-
-             <fieldset id="contact-input">
-                <div class="reg-input">
-                    <p class="response" id="prefer-contact">
-                        Who would you prefer to contact?
-                        @Html.DropDownListFor(x => x.PreferredContact, new[]
-                        {
-                            new SelectListItem() {Text = "The Officer of Operations"},
-                            new SelectListItem() {Text = "The Events Coordinator"},
-                            new SelectListItem() {Text = "The Officer of Communication"},
-                            new SelectListItem() {Text = "No Preference"}
-                        }, "Select a Preferred Person of Contact", new { @class = "input-boxes" })
-                    </p>
-                </div>
-
-                <div class="reg-input">
-                    <p class="response" id="client-title">
-                        Are you a student, prospective student, or staff member of Thomas College?
-                        <br />If none of these, please select Other.
-                        @Html.DropDownListFor(x => x.PreferredTitle, new[]
-                        {
-                            new SelectListItem() {Text = "Student"},
-                            new SelectListItem() {Text = "Prospective Student"},
-                            new SelectListItem() {Text = "Staff Member"},
-                            new SelectListItem() {Text = "Other"}
-                        }, "Select an Option", new { @class = "input-boxes" })
-                    </p>
-                </div>
-
-                <div class="reg-input">
-                    <p name="first-name" id="first-name" class="response">First Name: @Html.TextBoxFor(x => x.FirstName, new { @class = "input-boxes" })</p>
-                </div>
-
-                <div class="reg-input">
-                    <p name="last-name" id="last-name" class="response">Last Name: @Html.TextBoxFor(x => x.LastName, new { @class = "input-boxes" })</p>
-                </div>
-
-                <div class="reg-input">
-                    <p name="email-input" id="email-input" class="response">Email: @Html.TextBoxFor(x => x.Email, new { @class = "input-boxes" })</p>
-                </div>
-
-                <div class="reg-input">
-                    <p name="phone-number" id="phone-number" class="response">Phone: @Html.TextBoxFor(x => x.Phone, new { @class = "input-boxes" })</p>
-                </div>
-
-                <div class="textarea-input">
-                    <p>
-                        Please describe your reason for contacting us today,
-                        @Html.TextAreaFor(x => x.Message)
-                    </p>
-                </div>
-             </fieldset>
-
-             <input type = "submit" name="contact-submit-button" id="contact-submit-button" class="submit-button" value="Submit Your Request" />
-            }
-            <!-- End Contact Form -->
-        </div>
-        <!-- END OF FORM DIV -->
-        <div class="column contact-page-right">
-
-            <!-- OTHER INFO START -->
-            <div class="other-info">
-                <h3> Additional Information </h3>
-                <h4> Address: </h4>
-                <p>
-                    180 West River Road<br/>
-                    Waterville, Maine 04901
+    <div class="column contact-page-left">
+        <!-- Contact Form -->
+        @using (Html.BeginForm())
+        {
+            @Html.ValidationSummary(true,"", new { @class="text-danger"})
+            <fieldset id="contact-input">
+            <div class="reg-input">
+                <p class="response" id="prefer-contact">
+                    Who would you prefer to contact?
+                    @Html.DropDownListFor(x => x.PreferredContact, new[]
+                    {
+                        new SelectListItem() {Text = "The Officer of Operations"},
+                        new SelectListItem() {Text = "The Events Coordinator"},
+                        new SelectListItem() {Text = "The Officer of Communication"},
+                        new SelectListItem() {Text = "No Preference"}
+                    }, "Select a Preferred Person of Contact", new { @class = "input-boxes" })
+                    @Html.ValidationMessageFor(x => x.PreferredContact, "", new { @class = "text-danger"})
                 </p>
-                <h4>Notice:</h4>
-                <p>Please address any physical mail sent to Thomas College Gaming Club with attn to Jim Delorie, who is the club advisor.</p>
-                <br/>
-                <p> The Thomas College Esports Division is not headed by the Thomas Gaming Club; for information regarding Esports, please contact Jim Delorie or the managing coach.</p>
-                <img title="Thomas College" src="~/Images/thomas-sign.jpg">
             </div>
-            <!-- OTHER INFO END -->
 
+            <div class="reg-input">
+                <p class="response" id="client-title">
+                    Are you a student, prospective student, or staff member of Thomas College?
+                    <br />If none of these, please select Other.
+                    @Html.DropDownListFor(x => x.PreferredTitle, new[]
+                    {
+                        new SelectListItem() {Text = "Student"},
+                        new SelectListItem() {Text = "Prospective Student"},
+                        new SelectListItem() {Text = "Staff Member"},
+                        new SelectListItem() {Text = "Other"}
+                    }, "Select an Option", new { @class = "input-boxes" })
+                </p>
+            </div>
+
+            <div class="reg-input">
+                <p name="first-name" id="first-name" class="response">First Name: @Html.TextBoxFor(x => x.FirstName, new { @class = "input-boxes" })</p>
+            </div>
+
+            <div class="reg-input">
+                <p name="last-name" id="last-name" class="response">Last Name: @Html.TextBoxFor(x => x.LastName, new { @class = "input-boxes" })</p>
+            </div>
+
+            <div class="reg-input">
+                <p name="email-input" id="email-input" class="response">Email: @Html.TextBoxFor(x => x.Email, new { @class = "input-boxes" })</p>
+            </div>
+
+            <div class="reg-input">
+                <p name="phone-number" id="phone-number" class="response">Phone: @Html.TextBoxFor(x => x.Phone, new { @class = "input-boxes" })</p>
+            </div>
+
+            <div class="textarea-input">
+                <p>
+                    Please describe your reason for contacting us today,
+                    @Html.TextAreaFor(x => x.Message)
+                </p>
+            </div>
+            </fieldset>
+
+            <input type = "submit" name="contact-submit-button" id="contact-submit-button" class="submit-button" value="Submit Your Request" />
+        }
+        <!-- End Contact Form -->
+    </div>
+    <!-- END OF FORM DIV -->
+    <div class="column contact-page-right">
+
+        <!-- OTHER INFO START -->
+        <div class="other-info">
+            <h3> Additional Information </h3>
+            <h4> Address: </h4>
+            <p>
+                180 West River Road<br/>
+                Waterville, Maine 04901
+            </p>
+            <h4>Notice:</h4>
+            <p>Please address any physical mail sent to Thomas College Gaming Club with attn to Jim Delorie, who is the club advisor.</p>
+            <br/>
+            <p> The Thomas College Esports Division is not headed by the Thomas Gaming Club; for information regarding Esports, please contact Jim Delorie or the managing coach.</p>
+            <img title="Thomas College" src="~/Images/thomas-sign.jpg">
         </div>
+        <!-- OTHER INFO END -->
 
-    </div><!-- MAIN CONTENT DIV END -->
+    </div>
+
+</div><!-- MAIN CONTENT DIV END -->

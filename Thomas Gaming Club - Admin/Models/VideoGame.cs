@@ -6,10 +6,10 @@ using System.Web;
 
 namespace Thomas_Gaming_Club.Models
 {
-    public class Game
+    public class VideoGame
     {
         [Key]
-        public string gameId { get; set; }
+        public int gameId { get; set; }
         public string title { get; set; }
         public int year { get; set; }
         public string publisher { get; set; }
