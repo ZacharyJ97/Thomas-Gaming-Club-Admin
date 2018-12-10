@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Extra Life";
+}
+
+@section Styles {
+    <link href="@Url.Content("~/Content/ExtraLife.css")" rel="stylesheet" type="text/css" />
+}
+
+<div class="main-content">
+    <div class="EL-banner">
+        <a href="https://www.extra-life.org/index.cfm?fuseaction=donorDrive.team&teamID=42785">
+            <img id="EL-img" src="~/Images/EL-Logo.png" />
+        </a>
+    </div>
+
+    <h2>24 Hours of Gaming for Extra Life!</h2>
+
+    <div class="EL-imgs-container">
+        <div class="EL-image-left">
+            <img id="EL-image1" src="~/Images/EL-2018.jpg" />
+        </div>
+
+        <div class="EL-image-right">
+            <img id="EL-image2" src="~/Images/EL2-2018.jpg" />
+        </div>
+    </div>
+
+    <div class="EL-info">
+        <p>
+            Thomas Gaming Club has been participating in the Extra Life 24 hour gaming event on an annual basis since 2017. The club
+            hopes to continue this streak and make each additional year better than the last. 2018's Extra Life concluded with over double the amount of last year's event
+            donated to Boston Children's Hospital. The club gets as much space and resources as it can to allow people to bring their own systems and computers as well as
+            host multiplayer console games on the televisions. Multiple challenges are held throughout the event and game codes are raffled to those who
+            are conscious and continuing to game consistently. Food is provided at appropriate intervals and usually accomodates everyone present.
+        </p>
+        <p>
+            The club looks to
+            get more sponsorship to provide better food and drinks more often. If the event continues to be just as popular, then the club could also move to a bigger venue
+            and expand the space and seating. The club would appreciate feedback on the Extra Life events if you have participated and any suggestions you might have.
+            Click the above Extra Life banner to be taken to the club's Extra Life page, or click @Html.ActionLink("Contact Us", "Contact") to send us some feedback!
+        </p>
+    </div>
+
+    <div class="EL-accent"></div>
+    <div class="EL-accent" id="EL-accent2"></div>
+
+</div>

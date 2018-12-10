@@ -70,6 +70,12 @@ namespace Thomas_Gaming_Club.Controllers
         }
 
         [HttpGet]
+        public ViewResult ExtraLife()
+        {
+            return View();
+        }
+
+        [HttpGet]
         public ViewResult AllContacts()
         {
             ViewBag.Contacts = db.Contacts.ToList();

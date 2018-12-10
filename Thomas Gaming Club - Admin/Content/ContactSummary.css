@@ -16,8 +16,7 @@
 }
 
 #submit-table td {
-    border: solid;
-    border-radius: 5px;
+    border-bottom: double;
     border-color: silver;
     color: white;
     padding: 10px;

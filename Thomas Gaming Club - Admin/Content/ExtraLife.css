@@ -1,0 +1,61 @@
+﻿.EL-banner {
+    width: 90%;
+    margin: 0 auto;
+    border-right: 10px groove goldenrod;
+    border-bottom: 10px groove goldenrod;
+    border-radius: 8px;
+    border-collapse: collapse;
+    height: 25vw;
+    padding: 2px;
+}
+.EL-banner img{
+    width: 100%;
+    height: 100%;
+}
+
+.EL-imgs-container{
+    display: table;
+    width: 100%;
+}
+
+.EL-imgs-container img {
+    width: 100%;
+    border-top: 5px groove gold;
+    border-bottom: 5px ridge gold;
+    border-right: none;
+    border-left: none;
+}
+
+.EL-image-left {
+    display: table-cell;
+    width: 50%;
+    max-width: 50%;
+    float: left;
+}
+.EL-image-right {
+    display: table-cell;
+    width: 50%;
+    max-width: 50%;
+    float: right;
+}
+.EL-info{
+    width: 98%;
+    margin: 0 auto;
+}
+
+.EL-accent {
+    margin: 40px auto;
+    border-bottom: 4px double goldenrod;
+    width: 85%;
+    border-radius: 3px;
+}
+
+#EL-accent2 {
+    border-bottom: 4px double goldenrod;
+    width: 60%;
+}
+
+.EL-info p{
+    text-align: justify;
+}
+

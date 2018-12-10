@@ -217,6 +217,7 @@
     <Content Include="Content\contactPage.css" />
     <Content Include="Content\ContactSummary.css" />
     <Content Include="Content\Events.css" />
+    <Content Include="Content\ExtraLife.css" />
     <Content Include="Content\Games.css" />
     <Content Include="Content\generalContent.css" />
     <Content Include="Content\homePage.css" />
@@ -238,6 +239,9 @@
     <Content Include="Images\com-fire.png" />
     <Content Include="Images\com-senate.png" />
     <Content Include="Images-Resources\Gaming-Desktop.png" />
+    <Content Include="Images\EL-2018.jpg" />
+    <Content Include="Images\EL-Logo.png" />
+    <Content Include="Images\EL2-2018.jpg" />
     <Content Include="Images\jasmine.jpg" />
     <Content Include="Images\Overcooked.jpg" />
     <Content Include="Images\patrick-bro.jpg" />
@@ -352,6 +356,7 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Home\ExtraLife.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
