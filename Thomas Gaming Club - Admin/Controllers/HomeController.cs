@@ -39,28 +39,35 @@ namespace Thomas_Gaming_Club.Controllers
         [HttpGet]
         public ViewResult PS4Games()
         {
-            return View();
+            ViewBag.Games = GetGames().Where(x => x.platform.Contains("PS4") || x.platform.Contains("PSVR")).ToList() ;
+            return View(ViewBag.Games);
         }
 
         [HttpGet]
         public ViewResult WiiUGames()
         {
-            return View();
+            ViewBag.Games = GetGames().Where(x => x.platform.Contains("WiiU")).ToList();
+            return View(ViewBag.Games);
         }
         [HttpGet]
         public ViewResult XboxGames()
         {
-            return View();
+            var games = GetGames();
+            List<Game> wiigames;
+            wiigames = games.Where(x => x.platform.Contains("Xbox")).ToList();
+            return View(wiigames.OrderBy(x => x.title).ToList());
         }
+
         [HttpGet]
         public ViewResult PCGames()
         {
-            return View();
+            ViewBag.Games = GetGames().Where(x => x.platform.Contains("PC")).ToList();
+            return View(ViewBag.Games);
         }
         [HttpGet]
         public ViewResult WiiGames()
         {
-            ViewBag.Games = GetGames().Where(x => x.platform.Contains("Wii"));
+            ViewBag.Games = GetGames().Where(x => x.platform.Contains("Wii")).ToList();
             return View(ViewBag.Games);
         }
         private IQueryable<Game> GetGames()
@@ -68,6 +75,7 @@ namespace Thomas_Gaming_Club.Controllers
             var games = from stack in db.VideoGames
                          select new Game
                          {
+                             gameId = stack.gameId,
                              title = stack.title,
                              year = stack.year,
                              publisher = stack.publisher,
