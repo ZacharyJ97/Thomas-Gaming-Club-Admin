@@ -14,7 +14,7 @@
 .navbar ul li {
 	/*changes list items from block elements to inline elements*/
 	display: inline;
-	font-size: 16pt;
+	font-size: 1.7vw;
 	margin-left: 20px;
     margin-right: 20px;
 }
@@ -68,13 +68,14 @@
 /*The footer of each page */
 .footer-bar {
     background-color: #303030;
-    width: 99.22%;
+    width: 100%;
     font-style: italic;
     color: whitesmoke;
     text-align: center;
     clear: both; /*nothing to left AND right of this*/
     margin-top: 20px;
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin-bottom: 0px;
 }
 

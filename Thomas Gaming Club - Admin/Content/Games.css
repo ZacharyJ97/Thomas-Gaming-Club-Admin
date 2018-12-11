@@ -28,6 +28,9 @@
     list-style: none;
     font-size: 2vw;
 }
+.game-info h3 {
+    font-size: 2.3vw;
+}
 
 .game-img {
     display: table-cell;

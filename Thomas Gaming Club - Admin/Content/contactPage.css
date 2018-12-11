@@ -98,7 +98,7 @@
 .other-info
 {
 	text-align:left;
-	width: 550px;
+	width: 95%;
 	padding: 0px;
 }
 .other-info h3
@@ -119,8 +119,8 @@
 }
 .other-info img
 {
-	width: 500px;
-	max-width: 500px;
+	width: 95%;
+	max-width: 100%;
 	margin-top: 20px;
 	border: 8px solid #ddd;
     border-radius: 4px;
