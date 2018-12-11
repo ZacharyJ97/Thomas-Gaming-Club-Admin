@@ -1,0 +1,58 @@
+﻿.resman-container {
+    width: 100%;
+    margin-top: 20px;
+}
+#resman-h3 {
+    border-bottom: .3vw inset firebrick;
+    border-radius: 5px;
+    width: 41vw;
+    padding-bottom: 2px;
+}
+
+.header-links{
+    display:inline;
+}
+
+.resman-accent-bar {
+    border-bottom: .2vw inset firebrick;
+    width: 95vw;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+.resman-info {
+    width: 100%;
+    max-width: 100%;
+}
+
+.resman-info ul li {
+    text-align: left;
+    display: inline;
+    list-style: none;
+    font-size: 1.1vw;
+    margin-left:10px;
+    border-right: 1px solid grey;
+    padding-right: 20px;
+}
+
+#contacts-link {
+    font-size: 1.5vw;
+}
+
+#contacts-link a:link {
+    text-decoration: none;
+    color: firebrick;
+}
+
+#contacts-link a:visited {
+    color: firebrick;
+}
+
+#contacts-link a:hover {
+    color: red;
+}
+
+#contacts-link a:active {
+    color: palevioletred;
+}

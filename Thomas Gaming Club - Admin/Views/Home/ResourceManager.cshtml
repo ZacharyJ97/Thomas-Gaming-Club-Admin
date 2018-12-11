@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Resource Manager";
+}
+@section Styles {
+    <link href="@Url.Content("~/Content/ResourceManager.css")" rel="stylesheet" type="text/css" />
+}
+
+<div class="main-content">
+    <h3 id="contacts-link">Return to @Html.ActionLink("Contact Submissions", "AllContacts", "Home")</h3>
+    <h3 id="contacts-link">@Html.ActionLink("Add a Game", "Create", "Home")</h3> 
+    <h3 id="resman-h3">All Game Resources Currently in the Database</h3>
+    @{
+        foreach (var game in ViewBag.VideoGames)
+        {
+            <div class="resman-container">
+                <div class="resman-info">
+                    <ul>
+                        <li>@game.title:</li>
+                        <li>@game.year</li>
+                        <li>Published by @game.publisher</li>
+                        <li>Developed by @game.developer</li>
+                        <li>@game.platform Version.</li>
+                        <li>
+                            @Html.ActionLink("Edit", "Edit", new { }, new { @class = "btn btn-info btn-xs" }) |
+                            @Html.ActionLink("Delete", "Delete", new { }, new { @class = "btn btn-danger btn-xs" })
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resman-accent-bar"></div>
+        }
+    }
+</div>

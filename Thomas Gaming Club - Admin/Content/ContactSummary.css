@@ -1,12 +1,20 @@
 ﻿.submit-display {
     margin: 0 auto;
+    margin-top: 10px;
     padding: 5px;
     border: double;
-    border-color: silver;
+    border-color: gold;
+    border-collapse: collapse;
     border-radius: 5px;
-    background-color: dimgray;
+    background-color: firebrick;
     width: 98%;
-    height: 100%;
+}
+
+.submit-display label {
+    color: gold;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 5px;
 }
 
 #submit-table {
@@ -16,11 +24,13 @@
 }
 
 #submit-table td {
-    border-bottom: double;
-    border-color: silver;
-    color: white;
+    border: double;
+    border-radius: 5px;
+    border-color: gold;
+    color: gold;
     padding: 10px;
     text-align: left;
+    max-width: 150px;
     word-wrap: break-word;
 }
 
@@ -28,7 +38,10 @@
     height: 35px;
     max-width: 100px;
     border: double;
-    border-color: whitesmoke;
+    border-color: gold;
     background-color: #505050;
     color: gold;
+    border-collapse: collapse;
+    width: 50px;
+    max-width: 50px;
 }
