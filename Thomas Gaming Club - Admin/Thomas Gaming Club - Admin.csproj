@@ -236,6 +236,50 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images-Games\Beat Saber.jpg" />
+    <Content Include="Images-Games\Call of Duty Black Ops 2.jpg" />
+    <Content Include="Images-Games\Call of Duty Ghosts.jpg" />
+    <Content Include="Images-Games\Call of Duty World at War.jpg" />
+    <Content Include="Images-Games\Counter Strike Global Offensive.jpg" />
+    <Content Include="Images-Games\Deer Drive.jpg" />
+    <Content Include="Images-Games\Doom VFR.jpg" />
+    <Content Include="Images-Games\Final Fantasy XIII.jpg" />
+    <Content Include="Images-Games\Fortnite.jpg" />
+    <Content Include="Images-Games\Guitar Hero Live.jpg" />
+    <Content Include="Images-Games\Half-Life 2.jpg" />
+    <Content Include="Images-Games\Halo Anniversary.jpg" />
+    <Content Include="Images-Games\Hearthstone.jpg" />
+    <Content Include="Images-Games\Injustice Gods Among Us.jpg" />
+    <Content Include="Images-Games\Kirbys Epic Yarn.jpg" />
+    <Content Include="Images-Games\League of Legends.jpg" />
+    <Content Include="Images-Games\Left 4 Dead.jpg" />
+    <Content Include="Images-Games\Links Crossbow Training.jpg" />
+    <Content Include="Images-Games\Madden NFL 11.jpg" />
+    <Content Include="Images-Games\Mario Kart 8.jpg" />
+    <Content Include="Images-Games\Mario Party 10.jpg" />
+    <Content Include="Images-Games\Mortal Kombat Komplete Edition.jpg" />
+    <Content Include="Images-Games\Need for Speed Carbon.jpg" />
+    <Content Include="Images-Games\Nintendo Land.jpg" />
+    <Content Include="Images-Games\Overcooked 2.jpg" />
+    <Content Include="Images-Games\Overwatch.jpg" />
+    <Content Include="Images-Games\Paladins, Champions of the Realm.jpg" />
+    <Content Include="Images-Games\Pokken Tournament.jpg" />
+    <Content Include="Images-Games\Resident Evil 7 Biohazard.jpg" />
+    <Content Include="Images-Games\Rockband 2.jpg" />
+    <Content Include="Images-Games\Rocket League.jpg" />
+    <Content Include="Images-Games\Scene It.jpg" />
+    <Content Include="Images-Games\Smite, Battleground of the Gods.jpg" />
+    <Content Include="Images-Games\Super Mario Galaxy.jpg" />
+    <Content Include="Images-Games\Super Smash Bros Brawl.jpg" />
+    <Content Include="Images-Games\Super Smash Bros for Wii U.jpg" />
+    <Content Include="Images-Games\The Elder Scrolls V Skyrim VR.jpg" />
+    <Content Include="Images-Games\Tony Hawks American Wasteland.jpg" />
+    <Content Include="Images-Games\Until Dawn Rush of Blood.jpg" />
+    <Content Include="Images-Games\Wii Music.jpg" />
+    <Content Include="Images-Games\Wii Play.jpg" />
+    <Content Include="Images-Games\Xenoblade Chronicles.jpg" />
+    <Content Include="Images-Games\You Dont Know Jack.jpg" />
+    <Content Include="Images-Games\Zoo Hospital.jpg" />
     <Content Include="Images\brandon.jpg" />
     <Content Include="Images\com-fire.png" />
     <Content Include="Images\com-senate.png" />
@@ -362,7 +406,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images-Games\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
