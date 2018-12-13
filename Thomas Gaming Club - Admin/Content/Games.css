@@ -1,4 +1,4 @@
-﻿/*This css document covers the individual console pages of listed games and the edit games view*/
+﻿/*This css document covers the individual console pages of listed games, the edit games view, and delete games view*/
 .game-container {
     display: table;
     width: 98%;
@@ -70,4 +70,13 @@
 }
 #edit-img{
     margin-top: 5%;
+}
+/*DELETE view css items*/
+#delete-return{
+    margin-left: 20px;
+}
+#delete-button {
+    font-size: 1.5vw;
+    font-family: 'Noto Serif JP', Helvetica, Arial, sans-serif;
+    margin-right: 20px;
 }

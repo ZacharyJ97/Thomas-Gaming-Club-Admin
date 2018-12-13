@@ -21,21 +21,6 @@ namespace Thomas_Gaming_Club___Admin.Controllers
             return View(db.VideoGames.ToList());
         }
 
-        // GET: Resource/Details/5
-        public ActionResult Details(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            VideoGame videoGame = db.VideoGames.Find(id);
-            if (videoGame == null)
-            {
-                return HttpNotFound();
-            }
-            return View(videoGame);
-        }
-
         // GET: Resource/Create
         public ActionResult Create()
         {
@@ -53,7 +38,7 @@ namespace Thomas_Gaming_Club___Admin.Controllers
             {
                 db.VideoGames.Add(videoGame);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("ResourceManager");
             }
 
             return View(videoGame);
@@ -85,7 +70,7 @@ namespace Thomas_Gaming_Club___Admin.Controllers
             {
                 db.Entry(videoGame).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("ResourceManager");
             }
             return View(videoGame);
         }
@@ -113,7 +98,7 @@ namespace Thomas_Gaming_Club___Admin.Controllers
             VideoGame videoGame = db.VideoGames.Find(id);
             db.VideoGames.Remove(videoGame);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("ResourceManager");
         }
 
         protected override void Dispose(bool disposing)

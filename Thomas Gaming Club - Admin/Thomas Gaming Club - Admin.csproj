@@ -408,7 +408,6 @@
     <Content Include="Views\Resource\ResourceManager.cshtml" />
     <Content Include="Views\Resource\Create.cshtml" />
     <Content Include="Views\Resource\Delete.cshtml" />
-    <Content Include="Views\Resource\Details.cshtml" />
     <Content Include="Views\Resource\Edit.cshtml" />
     <Content Include="Views\Resource\Index.cshtml" />
   </ItemGroup>
