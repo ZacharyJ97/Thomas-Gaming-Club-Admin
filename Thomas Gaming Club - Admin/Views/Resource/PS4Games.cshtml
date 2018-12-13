@@ -12,7 +12,7 @@
     @{
         foreach (var game in ViewBag.VideoGames)
         {
-            string gameImage = game.title + ".jpg";
+            string gameImage = game.Title + ".jpg";
 
             <div class="game-container">
                 <div class="game-img">
@@ -20,11 +20,11 @@
                 </div>
 
                 <div class="game-info">
-                    <h3>@game.title</h3>
+                    <h3>@game.Title</h3>
                     <ul>
-                        <li>Year Released: @game.year</li>
-                        <li>Publisher: @game.publisher</li>
-                        <li>Developer: @game.developer</li>
+                        <li>Year Released: @game.Year</li>
+                        <li>Publisher: @game.Publisher</li>
+                        <li>Developer: @game.Developer</li>
                     </ul>
                 </div>
             </div>

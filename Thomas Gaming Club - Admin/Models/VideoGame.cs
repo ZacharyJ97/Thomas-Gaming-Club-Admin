@@ -9,11 +9,11 @@ namespace Thomas_Gaming_Club.Models
     public class VideoGame
     {
         [Key]
-        public int gameId { get; set; }
-        public string title { get; set; }
-        public int year { get; set; }
-        public string publisher { get; set; }
-        public string developer { get; set; }
-        public string platform { get; set; }
+        public int GameId { get; set; }
+        public string Title { get; set; }
+        public int Year { get; set; }
+        public string Publisher { get; set; }
+        public string Developer { get; set; }
+        public string Platform { get; set; }
     }
 }

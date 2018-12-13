@@ -7,7 +7,7 @@
 
 <div class="main-content">
     <h3 id="contacts-link">Return to @Html.ActionLink("Contact Submissions", "AllContacts", "Home")</h3>
-    <h3 id="contacts-link">@Html.ActionLink("Add a Game", "Create", "Resource")</h3> 
+    <h3 id="contacts-link">@Html.ActionLink("Add a Game", "Create", "Resource")</h3>
     <h3 id="resman-h3">All Game Resources Currently in the Database</h3>
     @{
         foreach (var game in ViewBag.VideoGames)
@@ -15,15 +15,13 @@
             <div class="resman-container">
                 <div class="resman-info">
                     <ul>
-                        <li id="game-title">@game.title</li>
-                        <li>@game.year</li>
-                        <li>Published by @game.publisher</li>
-                        <li>Developed by @game.developer</li>
-                        <li>@game.platform Version</li>
-                        <li id="edit-delete">
-                            @Html.ActionLink("Edit", "Edit", new { id = game.gameId }, new { @class = "btn btn-info btn-xs" }) | 
-                            @Html.ActionLink("Delete", "Delete", new { id = game.gameId }, new { @class = "btn btn-danger btn-xs" })
-                        </li>
+                        <li id="game-title">@game.Title</li>
+                        <li>@game.Year</li>
+                        <li>Published by @game.Publisher</li>
+                        <li>Developed by @game.Developer</li>
+                        <li>@game.Platform Version</li>
+                        <li>@Html.ActionLink("Edit", "Edit", new { id = game.GameId }, new { @class = "button" })</li>
+                        <li id="link-delete">@Html.ActionLink("Delete", "Delete", new { id = game.GameId }, new { @class = "button" })</li>
                     </ul>
                 </div>
             </div>

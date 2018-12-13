@@ -60,7 +60,13 @@
     font-size: 1.2vw;
     font-weight: bold;
 }
-#edit-delete{
-    border:none;
-    padding: 2px;
+#link-delete{
+    border-right: none;
+}
+.button{
+    text-decoration: none;
+    background-color: firebrick;
+    border-radius: .3vw;
+    color: gold;
+    padding: 3px 10px;
 }

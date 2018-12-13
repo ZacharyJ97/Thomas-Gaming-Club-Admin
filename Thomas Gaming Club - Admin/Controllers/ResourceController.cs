@@ -128,7 +128,7 @@ namespace Thomas_Gaming_Club___Admin.Controllers
         [HttpGet]
         public ActionResult ResourceManager()
         {
-            ViewBag.VideoGames = db.VideoGames.OrderBy(x => x.platform);
+            ViewBag.VideoGames = db.VideoGames.OrderBy(x => x.Platform);
             return View();
         }
 
@@ -141,35 +141,35 @@ namespace Thomas_Gaming_Club___Admin.Controllers
         [HttpGet]
         public ActionResult PS4Games()
         {
-            ViewBag.VideoGames = db.VideoGames.Where(x => x.platform.Contains("PS4") || x.platform.Contains("PSVR")).ToList().OrderBy(x => x.title);
+            ViewBag.VideoGames = db.VideoGames.Where(x => x.Platform.Contains("PS4") || x.Platform.Contains("PSVR")).ToList().OrderBy(x => x.Title);
             return View();
         }
 
         [HttpGet]
         public ActionResult WiiUGames()
         {
-            ViewBag.VideoGames = db.VideoGames.Where(x => x.platform.Contains("WiiU")).ToList().OrderBy(x => x.title);
+            ViewBag.VideoGames = db.VideoGames.Where(x => x.Platform.Contains("WiiU")).ToList().OrderBy(x => x.Title);
             return View();
         }
 
         [HttpGet]
         public ActionResult XboxGames()
         {
-            ViewBag.VideoGames = db.VideoGames.Where(x => x.platform.Contains("Xbox")).ToList().OrderBy(x => x.title);
+            ViewBag.VideoGames = db.VideoGames.Where(x => x.Platform.Contains("Xbox")).ToList().OrderBy(x => x.Title);
             return View();
         }
 
         [HttpGet]
         public ActionResult PCGames()
         {
-            ViewBag.VideoGames = db.VideoGames.Where(x => x.platform.Contains("PC")).ToList().OrderBy(x => x.title);
+            ViewBag.VideoGames = db.VideoGames.Where(x => x.Platform.Contains("PC")).ToList().OrderBy(x => x.Title);
             return View();
         }
 
         [HttpGet]
         public ActionResult WiiGames()
         {
-            ViewBag.VideoGames = db.VideoGames.Where(x => x.platform.Equals("Wii")).ToList().OrderBy(x => x.title);
+            ViewBag.VideoGames = db.VideoGames.Where(x => x.Platform.Equals("Wii")).ToList().OrderBy(x => x.Title);
             return View();
         }
     }

@@ -41,12 +41,12 @@ namespace Thomas_Gaming_Club.Controllers
             var games = from stack in db.VideoGames
                          select new VideoGame
                          {
-                             gameId = stack.gameId,
-                             title = stack.title,
-                             year = stack.year,
-                             publisher = stack.publisher,
-                             developer = stack.developer,
-                             platform = stack.platform
+                             GameId = stack.GameId,
+                             Title = stack.Title,
+                             Year = stack.Year,
+                             Publisher = stack.Publisher,
+                             Developer = stack.Developer,
+                             Platform = stack.Platform
                          };
 
             return games;

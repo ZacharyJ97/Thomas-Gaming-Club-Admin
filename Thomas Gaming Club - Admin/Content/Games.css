@@ -1,4 +1,5 @@
-﻿.game-container {
+﻿/*This css document covers the individual console pages of listed games and the edit games view*/
+.game-container {
     display: table;
     width: 98%;
     margin-top: 20px;
@@ -50,4 +51,23 @@
 #wiiu-games{
     border:none;
 }
+/*EDIT game view css items *******************************/
 
+#edit-form{
+    padding-left: 25px;
+    margin-bottom: 25px;
+}
+.button {
+    text-decoration: none;
+    background-color: firebrick;
+    border-radius: .3vw;
+    color: gold;
+    padding: 3px 10px;
+}
+/*Contains the Edit page's "Return" button*/
+#button-container{
+    padding-top: 20px;
+}
+#edit-img{
+    margin-top: 5%;
+}
