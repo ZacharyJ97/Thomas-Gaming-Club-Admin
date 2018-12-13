@@ -194,6 +194,7 @@
     <Compile Include="Controllers\ContactsAdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ResourceController.cs" />
     <Compile Include="Data Contexts\EFDbContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -387,12 +388,12 @@
     <Content Include="Views\ContactsAdmin\Details.cshtml" />
     <Content Include="Views\ContactsAdmin\Edit.cshtml" />
     <Content Include="Views\ContactsAdmin\Index.cshtml" />
-    <Content Include="Views\Home\Resources.cshtml" />
-    <Content Include="Views\Home\PS4Games.cshtml" />
-    <Content Include="Views\Home\WiiUGames.cshtml" />
-    <Content Include="Views\Home\WiiGames.cshtml" />
-    <Content Include="Views\Home\XboxGames.cshtml" />
-    <Content Include="Views\Home\PCGames.cshtml" />
+    <Content Include="Views\Resource\Resources.cshtml" />
+    <Content Include="Views\Resource\PS4Games.cshtml" />
+    <Content Include="Views\Resource\WiiUGames.cshtml" />
+    <Content Include="Views\Resource\WiiGames.cshtml" />
+    <Content Include="Views\Resource\XboxGames.cshtml" />
+    <Content Include="Views\Resource\PCGames.cshtml" />
     <Content Include="Views\Home\Events.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
@@ -404,10 +405,16 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Home\ExtraLife.cshtml" />
-    <Content Include="Views\Home\ResourceManager.cshtml" />
+    <Content Include="Views\Resource\ResourceManager.cshtml" />
+    <Content Include="Views\Resource\Create.cshtml" />
+    <Content Include="Views\Resource\Delete.cshtml" />
+    <Content Include="Views\Resource\Details.cshtml" />
+    <Content Include="Views\Resource\Edit.cshtml" />
+    <Content Include="Views\Resource\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

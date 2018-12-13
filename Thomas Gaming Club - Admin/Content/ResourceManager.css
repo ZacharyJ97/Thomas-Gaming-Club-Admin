@@ -56,3 +56,11 @@
 #contacts-link a:active {
     color: palevioletred;
 }
+#game-title{
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+#edit-delete{
+    border:none;
+    padding: 2px;
+}

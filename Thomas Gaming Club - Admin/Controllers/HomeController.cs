@@ -34,54 +34,8 @@ namespace Thomas_Gaming_Club.Controllers
         public ViewResult About()
         {
             return View();
-        }
+        }       
 
-        [HttpGet]
-        public ViewResult Resources()
-        {
-            return View();
-        }
-
-        [HttpGet]
-        public ActionResult PS4Games()
-        {
-            ViewBag.VideoGames = db.VideoGames.Where(x => x.platform.Contains("PS4") || x.platform.Contains("PSVR")).ToList().OrderBy(x => x.title);
-            return View();
-        }
-
-        [HttpGet]
-        public ActionResult WiiUGames()
-        {
-            ViewBag.VideoGames = db.VideoGames.Where(x => x.platform.Contains("WiiU")).ToList().OrderBy(x => x.title);
-            return View();
-        }
-
-        [HttpGet]
-        public ActionResult XboxGames()
-        {
-            ViewBag.VideoGames = db.VideoGames.Where(x => x.platform.Contains("Xbox")).ToList().OrderBy(x => x.title);
-            return View();
-        }
-
-        [HttpGet]
-        public ActionResult PCGames()
-        {
-            ViewBag.VideoGames = db.VideoGames.Where(x => x.platform.Contains("PC")).ToList().OrderBy(x => x.title);
-            return View();
-        }
-        [HttpGet]
-        public ActionResult WiiGames()
-        {
-            ViewBag.VideoGames = db.VideoGames.Where(x => x.platform.Equals("Wii")).ToList().OrderBy(x => x.title);
-            return View();
-        }
-
-        [HttpGet]
-        public ActionResult ResourceManager()
-        {
-            ViewBag.VideoGames = db.VideoGames.OrderBy(x => x.title);
-            return View();
-        }
         private IQueryable<VideoGame> GetGames()
         {
             var games = from stack in db.VideoGames
