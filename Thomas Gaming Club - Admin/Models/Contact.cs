@@ -8,6 +8,7 @@ namespace Thomas_Gaming_Club.Models
 {
     public class Contact
     {
+        public int ContactId { get; set; }
         [Required(ErrorMessage = "Please choose a preferred contact")]
         public string PreferredContact { get; set; }
 
@@ -22,8 +23,7 @@ namespace Thomas_Gaming_Club.Models
 
         [Required(ErrorMessage = "Please enter your email address")]
         [RegularExpression(".+\\@.+\\..+",
-            ErrorMessage = "*The email address entered is not valid")]
-        [Key]
+            ErrorMessage = "The email address entered is not valid")]
         public string Email { get; set; }
 
         public string Phone { get; set; }
