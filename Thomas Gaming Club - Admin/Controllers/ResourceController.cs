@@ -32,7 +32,7 @@ namespace Thomas_Gaming_Club___Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "gameId,title,year,publisher,developer,platform")] VideoGame videoGame)
+        public ActionResult Create([Bind(Include = "GameId,Title,Year,Publisher,Developer,Platform")] VideoGame videoGame)
         {
             if (ModelState.IsValid)
             {
